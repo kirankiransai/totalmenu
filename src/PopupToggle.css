@@ -1,0 +1,54 @@
+/* .popup-toggle {
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.popup-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-content li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.popup-content li:hover {
+  background-color: #f0f0f0;
+} */
+.popup-toggle {
+  position: relative;
+  z-index: 1; /* Add z-index to the parent container */
+}
+
+.popup {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 2; /* Increase the z-index of the popup */
+}
+
+.popup-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-content li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.popup-content li:hover {
+  background-color: #f0f0f0;
+}
